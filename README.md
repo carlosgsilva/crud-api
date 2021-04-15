@@ -1,2 +1,2 @@
 # crud-api
-Aplicação CRUD com api
+Aplicação CRUD API em Node.js
