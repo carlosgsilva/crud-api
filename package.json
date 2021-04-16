@@ -2,19 +2,47 @@
   "name": "crud-api",
   "version": "1.0.0",
   "description": "Aplicação CRUD API em Node.js",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/carlosgsilva/crud-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "express",
+    "github-actions",
+    "swa",
+    "serveless",
+    "azure",
+    "postgresql",
+    "sql",
+    "javascript"
+
+  ],
+  "author": "Carlos Silva",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/carlosgsilva/crud-api/issues"
   },
-  "homepage": "https://github.com/carlosgsilva/crud-api#readme"
+  "homepage": "https://github.com/carlosgsilva/crud-api#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "husky": "^4.2.5",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "express-promisse-router": "^4.0.1",
+    "pg": "^8.3.0"
+  }
 }
